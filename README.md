@@ -37,7 +37,7 @@ Talento-Tech-QA-Automation/
 │ ├── test_catalogo.py # Verificación del catálogo y elementos de interfaz
 │ └── test_cart.py # Prueba de agregar producto al carrito
 └── reports/ # Carpeta donde se generan los reportes HTML
-
+```
 ---
 
 ## Instalación y Configuración
@@ -47,19 +47,19 @@ Talento-Tech-QA-Automation/
 ```bash
    git clone https://github.com/jon8821/Talento-Tech-QA-Automation.git
    cd Talento-Tech-QA-Automation
-   
+```
 Crear un entorno virtual (opcional pero recomendado):
 
 ```bash
    python -m venv venv
    venv\Scripts\activate     # En Windows
    source venv/bin/activate  # En macOS / Linux
-
+```
 Instalar dependencias:
 
 ```bash
    pip install selenium pytest pytest-html
-
+```
 Asegurarse de tener instalado Google Chrome y ChromeDriver.
 La versión de ChromeDriver debe coincidir con la versión del navegador Chrome.
 
@@ -71,9 +71,9 @@ Para ejecutar todas las pruebas y generar un reporte HTML automáticamente:
 
 ```bash
    python run_tests.py
-
+```
 O bien, manualmente con Pytest:
 
 ```bash
    pytest -v --html=reports/reporte.html --self-contained-html
-
+```
