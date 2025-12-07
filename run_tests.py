@@ -6,14 +6,24 @@ import os
 os.makedirs("reports", exist_ok=True)
 
 # Generar nombre único según fecha y hora
-timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
 report_name = f"report_{timestamp}.html"
 
 # Lista de archivos de pruebas a ejecutar
 test_files = [
     "tests/test_login.py",
     "tests/test_catalogo.py",
-    "tests/test_cart.py"    
+    "tests/test_carro.py",
+    "tests/test_inventory.py",
+    "tests/test_cart.py",
+    "tests/test_cart_json.py",
+    "tests/test_login_faker.py",
+    "tests/test_api_get.py",
+    "tests/test_api_post.py",
+    "tests/test_api_put.py",
+    "tests/test_api_patch.py",
+    "tests/test_api_delete.py",
+    "tests/test_failed.py"
 ]
 
 # Argumentos para ejecutar pruebas: archivos + reporte html

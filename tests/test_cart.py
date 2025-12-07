@@ -1,45 +1,45 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium import webdriver
+import pytest
+from pages.inventory_page import InventoryPage
+from pages.cart_page import CartPage
+from pages.login_page import LoginPage
+from utils.logger import logger
 
-def test_add_to_cart(login_in_driver):
+@pytest.mark.saucedemo
+@pytest.mark.cart
+@pytest.mark.parametrize("usuario,password",[("standard_user","secret_sauce")])
+def test_cart(login_in_driver,usuario,password):
+    test = "Test Cart - Parametrizado"
     try:
         driver = login_in_driver
-        wait = WebDriverWait(driver, 10)
+        logger.info(f"Iniciando '{test}'")
 
-        # Esperar que los productos del inventario estén visibles
-        wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "inventory_item")))
-        productos = driver.find_elements(By.CLASS_NAME, "inventory_item")
-        
-        # Agregar el primer producto de la lista al carrito
-        productos[0].find_element(By.TAG_NAME, "button").click()
-        print('Se presiona el botón "Add to cart" del primer producto.')
+        #Realizar el login
+        LoginPage(driver).login_completo(usuario,password)
+        logger.info(f"{test} - Ingresando usuario: {usuario} y contraseña: {password}")
+        logger.info(f"{test} - Inicio de sesión exitoso")
+        #print("Inicio de sesión exitoso")
 
-        # Esperar a que aparezca el ícono del carrito con número (badge)
-        wait.until(EC.presence_of_element_located((By.CLASS_NAME, "shopping_cart_badge")))
-        carrito = driver.find_element(By.CLASS_NAME, "shopping_cart_badge").text
+        inventory_page = InventoryPage(driver)
 
-        assert carrito == "1", f"El número en el carrito no es correcto (valor actual: {carrito})"
-        print(f"El carrito muestra número de producto agregado ({carrito}).")
+        #Agregar al carrito el producto
+        inventory_page.agregar_primer_producto()
+        logger.info(f"{test} - Producto agregado al carrito")
+        #print("Producto agregado al carrito")
 
-        # Hacer clic en el carrito (abrirlo)
-        wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "shopping_cart_link")))
-        driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
-        print("Se hace clic en el carrito de compras.")
+        #Abrir el carrito
+        inventory_page.abrir_carrito()
+        logger.info(f"{test} - Abriendo el carrito")    
+        #print("Se abre el carrito")
 
-        # Esperar a que cargue la página del carrito
-        wait.until(EC.url_contains("/cart.html"))
-        assert "/cart.html" in driver.current_url, "No se redirigió correctamente al carrito de compras."
-        print("Se visualiza el carrito de compras de forma correcta.")
+        #Validar el producto
+        cartPage = CartPage(driver)
 
-        # Verificar que haya productos en el carrito
-        try:
-            wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "cart_item")))
-            products_in_cart = driver.find_elements(By.CLASS_NAME, "cart_item")
-            assert len(products_in_cart) > 0, "No existen productos en el carrito"
-        except Exception:
-            raise AssertionError("No se encontraron productos en el carrito después de 10 segundos.")
-        print("Se visualiza el producto en el carrito de compras de forma correcta.")
+        productos_en_carrito = cartPage.obtener_productos_carrito()
+        assert len(productos_en_carrito) == 1, "El carrito tiene una cantidad de productos distinta a 1"
+        logger.info(f"{test} - El carrito tiene 1 solo producto")
+        #print("Se valida que el carrito tiene 1 producto")
 
     except Exception as e:
         print(f"Error en test_cart: {e}")

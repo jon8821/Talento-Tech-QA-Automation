@@ -1,0 +1,97 @@
+2025-12-07 17:55:40 INFO TalentoTech: Iniciando 'Test Login CSV'
+2025-12-07 17:55:40 INFO TalentoTech: Test Login CSV - Realizando login con usuario: 'standard_user' y contraseña: 'secret_sauce'
+2025-12-07 17:55:40 INFO TalentoTech: Test Login CSV - Validando usuario y contraseña.
+2025-12-07 17:55:40 INFO TalentoTech: Test Login CSV - Verificando redirección a la página de inventario.
+2025-12-07 17:55:40 INFO TalentoTech: Test Login CSV - Finalizada la prueba de login con credenciales válidas de forma exitosa.
+2025-12-07 17:55:44 INFO TalentoTech: Iniciando 'Test Login CSV'
+2025-12-07 17:55:44 INFO TalentoTech: Test Login CSV - Realizando login con usuario: 'admin' y contraseña: '1234'
+2025-12-07 17:55:44 INFO TalentoTech: Test Login CSV - Validando usuario y contraseña.
+2025-12-07 17:55:44 INFO TalentoTech: Test Login CSV - Verificando mensaje de error por credenciales inválidas.
+2025-12-07 17:55:44 INFO TalentoTech: Test Login CSV - validando mensaje de error recibido: Epic sadface: Username and password do not match any user in this service
+2025-12-07 17:55:44 INFO TalentoTech: Test Login CSV - Finalizada la prueba de login con credenciales inválidas de forma exitosa.
+2025-12-07 17:55:48 INFO TalentoTech: Iniciando 'Test Inventory - No Parametrizado'
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - Inicio de sesión exitoso
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - El título de la página es correcto: Swag Labs
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - Existen 6 productos en el catálogo
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - El nombre del primer producto es "Sauce Labs Backpack" con un valor de: $29.99
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - El botón de menú está presente y visible.
+2025-12-07 17:55:48 INFO TalentoTech: Test Inventory - No Parametrizado - El botón de filtro está presente y visible.
+2025-12-07 17:55:52 INFO TalentoTech: Iniciando 'Test Cart - No Paremetrizado'
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Inicio de sesión exitoso
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Esperando que los productos del inventario estén visibles
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Se encontraron 6 productos en el inventario
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Se presiona el botón 'Add to cart' del primer producto.
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Esperando que el ícono del carrito muestre el número de productos agregados
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - El carrito muestra número de producto agregado (1).
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Haciendo clic en el ícono del carrito para abrirlo
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Esperando que cargue la página del carrito de compras
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Se redirige correctamente al carrito de compras.
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Verificando que haya productos en el carrito de compras
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Esperando que los productos en el carrito estén visibles
+2025-12-07 17:55:53 INFO TalentoTech: Test Cart - No Paremetrizado - Se encontraron 1 productos en el carrito de compras.
+2025-12-07 17:55:56 INFO TalentoTech: Iniciando 'Test Inventory - Parametrizado'
+2025-12-07 17:55:57 INFO TalentoTech: Test Inventory - Parametrizado - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:55:57 INFO TalentoTech: Test Inventory - Parametrizado - Inicio de sesión exitoso
+2025-12-07 17:55:57 INFO TalentoTech: Test Inventory - Parametrizado - Cantidad de productos en inventario: 6
+2025-12-07 17:56:07 INFO TalentoTech: Test Inventory - Parametrizado - El carrito esta vacio al inicio
+2025-12-07 17:56:07 INFO TalentoTech: Test Inventory - Parametrizado - Se agrego el primer producto al carrito
+2025-12-07 17:56:07 INFO TalentoTech: Test Inventory - Parametrizado - El contador del carrito se actualizo correctamente a 1
+2025-12-07 17:56:11 INFO TalentoTech: Iniciando 'Test Cart - Parametrizado'
+2025-12-07 17:56:11 INFO TalentoTech: Test Cart - Parametrizado - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:56:11 INFO TalentoTech: Test Cart - Parametrizado - Inicio de sesión exitoso
+2025-12-07 17:56:11 INFO TalentoTech: Test Cart - Parametrizado - Producto agregado al carrito
+2025-12-07 17:56:11 INFO TalentoTech: Test Cart - Parametrizado - Abriendo el carrito
+2025-12-07 17:56:12 INFO TalentoTech: Test Cart - Parametrizado - El carrito tiene 1 solo producto
+2025-12-07 17:56:15 INFO TalentoTech: Iniciando 'Test Cart JSON'
+2025-12-07 17:56:16 INFO TalentoTech: Test Cart JSON - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:56:16 INFO TalentoTech: Test Cart JSON - Inicio de sesión exitoso
+2025-12-07 17:56:16 INFO TalentoTech: Test Cart JSON - Se agregó el producto 'Sauce Labs Backpack' al carrito.
+2025-12-07 17:56:16 INFO TalentoTech: Test Cart JSON - Se abre el carrito de compras.
+2025-12-07 17:56:16 INFO TalentoTech: Test Cart JSON - Se valida que el producto 'Sauce Labs Backpack' esté en el carrito de compras.
+2025-12-07 17:56:20 INFO TalentoTech: Iniciando 'Test Cart JSON'
+2025-12-07 17:56:20 INFO TalentoTech: Test Cart JSON - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:56:20 INFO TalentoTech: Test Cart JSON - Inicio de sesión exitoso
+2025-12-07 17:56:20 INFO TalentoTech: Test Cart JSON - Se agregó el producto 'Sauce Labs Bike Light' al carrito.
+2025-12-07 17:56:20 INFO TalentoTech: Test Cart JSON - Se abre el carrito de compras.
+2025-12-07 17:56:20 INFO TalentoTech: Test Cart JSON - Se valida que el producto 'Sauce Labs Bike Light' esté en el carrito de compras.
+2025-12-07 17:56:24 INFO TalentoTech: Iniciando 'Test Cart JSON'
+2025-12-07 17:56:24 INFO TalentoTech: Test Cart JSON - Ingresando usuario: standard_user y contraseña: secret_sauce
+2025-12-07 17:56:24 INFO TalentoTech: Test Cart JSON - Inicio de sesión exitoso
+2025-12-07 17:56:24 INFO TalentoTech: Test Cart JSON - Se agregó el producto 'Sauce Labs Bolt T-Shirt' al carrito.
+2025-12-07 17:56:24 INFO TalentoTech: Test Cart JSON - Se abre el carrito de compras.
+2025-12-07 17:56:24 INFO TalentoTech: Test Cart JSON - Se valida que el producto 'Sauce Labs Bolt T-Shirt' esté en el carrito de compras.
+2025-12-07 17:56:28 INFO TalentoTech: Iniciando 'Test Login con Faker'
+2025-12-07 17:56:28 INFO TalentoTech: Test Login con Faker - Probando con datos generados por el FAKER usuario: 'matthewmcknight' y contraseña: 'LTU7*Mv_&S'
+2025-12-07 17:56:28 INFO TalentoTech: Test Login con Faker - El login falló como se esperaba con el mensaje de error: Epic sadface: Username and password do not match any user in this service
+2025-12-07 17:56:33 INFO TalentoTech: Iniciando 'Test Login con Faker'
+2025-12-07 17:56:33 INFO TalentoTech: Test Login con Faker - Probando con datos generados por el FAKER usuario: 'fieldscassandra' y contraseña: 'AB^8YTlmfF'
+2025-12-07 17:56:33 INFO TalentoTech: Test Login con Faker - El login falló como se esperaba con el mensaje de error: Epic sadface: Username and password do not match any user in this service
+2025-12-07 17:56:35 INFO TalentoTech: Iniciando 'Test API GET'
+2025-12-07 17:56:35 INFO TalentoTech: Test API GET - Realizando solicitud GET a la URL: https://reqres.in/api/users/2
+2025-12-07 17:56:35 INFO TalentoTech: Test API GET - Respuesta recibida con status code: 200
+2025-12-07 17:56:35 INFO TalentoTech: Test API GET - La clave "data" está presente en la respuesta.
+2025-12-07 17:56:35 INFO TalentoTech: Test API GET - Existe al menos 1 usuario en la lista.
+2025-12-07 17:56:35 INFO TalentoTech: Iniciando 'Test API POST'
+2025-12-07 17:56:35 INFO TalentoTech: Test API POST - Enviando solicitud PUT a la URL: https://reqres.in/api/users
+2025-12-07 17:56:36 INFO TalentoTech: Test API POST - Respuesta recibida con status code: 201
+2025-12-07 17:56:36 INFO TalentoTech: Test API POST - El nombre enviado Thor coincide con el recibido: Thor
+2025-12-07 17:56:36 INFO TalentoTech: Test API POST - ID del usuario creado: 99
+2025-12-07 17:56:36 INFO TalentoTech: Test API POST - Fecha de creacion del usuario: 2025-12-07T20:56:36.427Z
+2025-12-07 17:56:36 INFO TalentoTech: Iniciando 'Test API PUT'
+2025-12-07 17:56:36 INFO TalentoTech: Test API PUT - Enviando solicitud PUT para actualizar un usuario
+2025-12-07 17:56:37 INFO TalentoTech: Test API PUT - Respuesta recibida con status code: 200
+2025-12-07 17:56:37 INFO TalentoTech: Test API PUT - Tiempo de respuesta: 0.8136136531829834 segundos
+2025-12-07 17:56:37 INFO TalentoTech: Test API PUT - El nombre y el trabajo son correctos: Loki, Dios de las travesuras
+2025-12-07 17:56:37 INFO TalentoTech: Test API PUT - Se creo la fecha de actualización del usuario: 2025-12-07T20:56:37.243Z
+2025-12-07 17:56:37 INFO TalentoTech: Iniciando 'Test API PATCH'
+2025-12-07 17:56:37 INFO TalentoTech: Test API PATCH - Enviando solicitud PATCH a la URL: https://reqres.in/api/users/2
+2025-12-07 17:56:38 INFO TalentoTech: Test API PATCH - Respuesta recibida con status code: 200
+2025-12-07 17:56:38 INFO TalentoTech: Test API PATCH - Tiempo de respuesta: 0.5701034069061279 segundos
+2025-12-07 17:56:38 INFO TalentoTech: Test API PATCH - El nombre se actualizó de forma correcta
+2025-12-07 17:56:38 INFO TalentoTech: Test API PATCH - Fecha de actualización del usuario: 2025-12-07T20:56:37.819Z
+2025-12-07 17:56:38 INFO TalentoTech: Iniciando 'Test API DELETE'
+2025-12-07 17:56:38 INFO TalentoTech: Test API DELETE - Enviando solicitud DELETE a la URL: https://reqres.in/api/users/2
+2025-12-07 17:56:38 INFO TalentoTech: Test API DELETE - Respuesta recibida con status code: 204
+2025-12-07 17:56:38 INFO TalentoTech: Test API DELETE - Tiempo de respuesta: 0.5356745719909668 segundos
