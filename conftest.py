@@ -12,6 +12,10 @@ def driver():
     chrome_opt = Options()
     # Abre Chrome en modo incógnito y evita ventanas emergentes molestas
     chrome_opt.add_argument("--incognito")
+    chrome_opt.add_argument("--no-sandbox") # GitHub
+    chrome_opt.add_argument("--disable-gpu") # GitHub
+    chrome_opt.add_argument("--window-size=1920,1080") # GitHub
+    chrome_opt.add_argument("--headless=new") # GitHub
     driver = webdriver.Chrome(options=chrome_opt)
     yield driver
     driver.quit()
