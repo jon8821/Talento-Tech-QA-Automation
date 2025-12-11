@@ -10,8 +10,14 @@ import re
 @pytest.fixture(scope="function")
 def driver():
     chrome_opt = Options()
-    # Abre Chrome en modo incógnito y evita ventanas emergentes molestas
-    chrome_opt.add_argument("--incognito")
+
+    chrome_opt.add_argument("--incognito") # Modo incógnito
+    chrome_opt.add_argument("--no-sandbox") # Evita problemas de permisos en Linux
+    chrome_opt.add_argument("--disable-gpu") # Deshabilita GPU
+    chrome_opt.add_argument("--window-size=1920,1080") # Tamaño de ventana
+    chrome_opt.add_argument("--headless=new") # Ejecutar sin interfaz gráfica
+    chrome_opt.add_argument("--disable-extensions") # Deshabilitar extensiones
+    
     driver = webdriver.Chrome(options=chrome_opt)
     yield driver
     driver.quit()
