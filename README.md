@@ -113,7 +113,7 @@ O bien, manualmente con Pytest:
 Al ejecutar `run_tests.py`, se crea la carpeta `logs` donde es creado el log de registro de la ejecución, por otra parte se crea también la carpeta `reports` y dentro de esta la carpeta `screenshots` donde:
 
 El reporte es generado en la carpeta `reports` con formato HTML, el cual incluye:
- - Lista completa de test ejecutados
+ - Lista completa de tests ejecutados
  - El estado de cada prueba
  - La duración de cada test
  
