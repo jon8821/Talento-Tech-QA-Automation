@@ -1,4 +1,4 @@
-# Proyecto de Automatización - Entrega Final Talento Tech QA Automation
+<h1 align="center">Talento Tech QA Automation - Entrega Final Proyecto de Automatización por JONATHAN ALVAREZ</h1>
 
 Este proyecto forma parte de la Entrega Final del Curso de QA Automation con Python y Selenium.
 El objetivo es demostrar la capacidad para automatizar flujos de navegación web utilizando 
